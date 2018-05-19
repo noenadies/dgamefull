@@ -4,78 +4,28 @@
     <meta charset="UTF-8"/>
 	<style>
 		body {
-			margin: 0;
-			padding: 0;
+			
 			background-color: #000000;
-            overflow: hidden;
+            width: 100%;
 		}
-        #canvasArea {
-      <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8"/>
-    <style>
-        body {
-            margin: 0;
+        #canvasArea2 {
+          position: absolute;
+        left: -222px;
+          top: -111px;
+          width: 50%;
+          margin: 0;
             padding: 0;
-            background-color: #000000;
-            overflow: hidden;
-        }
-        #canvasArea {
-         margin: 0;
-            padding: 0;
-            overflow: hidden;
         }
 
-        
-    </style>
-    <!-- Libs and GDJS core files : -->
-        <script src="code.js"></script>
-
-
-</head>
-<body>
-    <div id="canvasArea"></div>
-
-    
-    <script>
-
-    (function() {
-        //Initialization
-        gdjs.registerObjects();
-        gdjs.registerBehaviors();
-        gdjs.registerGlobalCallbacks();
-
-        var game = new gdjs.RuntimeGame(gdjs.projectData, {});
-
-        //Create a renderer
-        var canvasArea = document.getElementById("canvasArea");
-        game.getRenderer().createStandardCanvas(canvasArea);
-
-        //Bind keyboards/mouse/touch events
-        game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
-
-        //Load all assets and start the game
-        game.loadAllAssets(function() {
-            game.startGameLoop();
-        });
-    })();
-
-    </script>
-</body>
-</html>
-
-        }
-
-        
 	</style>
     <!-- Libs and GDJS core files : -->
 		<script src="code.js"></script>
 
 
 </head>
-<body>
-    <div id="canvasArea"></div>
+<body
+>
+   <div id="canvasArea2">  <div id="canvasArea"></div> </div> 
 
     
 	<script>
