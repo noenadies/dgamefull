@@ -8,14 +8,13 @@
 			padding: 0;
 			background-color: #000000;
             overflow: hidden;
-          
 		}
         #canvasArea {
-            margin-left: auto;
-            margin-right: auto;
-            overflow: hidden;
-            width: 800px;
-            height: 480px;
+             position: absolute;
+    left: 0px;
+    top: 0px;
+          display: flex;
+           align-items: center;
         }
 
         
@@ -32,9 +31,6 @@
 	<script>
 
     (function() {
-
-        var w = window.innerWidth;
-var h = window.innerHeight;
         //Initialization
         gdjs.registerObjects();
         gdjs.registerBehaviors();
